@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+hermandadmatriz_product_properties.access_metals,access_metals,hermandadmatriz_product_properties.model_metals,base.group_user,1,1,1,1
