@@ -5,7 +5,7 @@
     "version": "16.0.1.0.1",
     "development_status": "Mature",
     "category": "Product",
-    "summary": "Product Brand Manager",
+    "summary": "Product Product Properties",
     "author": "Xtendoo, ",
     "website": "https://github.com/xtendoo-corporation/",
     "license": "AGPL-3",
