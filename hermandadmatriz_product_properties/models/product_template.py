@@ -18,6 +18,19 @@ class ProductTemplate(models.Model):
         "metals",
         string="Metal",
     )
+    technique_name = fields.Char(
+        string="Nombre Técnica",
+        placeholder="Nombre Técnica",
+    )
+    metal_color = fields.Char(
+        string="Color Metal",
+        placeholder="Color Metal",
+    )
+    metal_law = fields.Many2one(
+        "metal_laws",
+        string="Ley Metal",
+        placeholder="Ley Metal",
+    )
 
 
 class Metals(models.Model):
@@ -28,6 +41,14 @@ class Metals(models.Model):
         string="Nombre",
     )
 
+
+class MetalLaws(models.Model):
+    _name = "metal_laws"
+    _description = "Leyes Metales"
+
+    name = fields.Char(
+        string="Nombre",
+    )
 
 
 
