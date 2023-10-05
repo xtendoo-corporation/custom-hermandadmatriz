@@ -14,28 +14,39 @@ class ProductTemplate(models.Model):
         string="Fecha Creación",
         default=fields.Date.today(),
     )
-    metal_id = fields.Many2one(
-        "metals",
-        string="Metal",
-    )
     technique_name = fields.Char(
-        string="Nombre Técnica",
-        placeholder="Nombre Técnica",
+        string="Técnica",
+        placeholder="Técnica",
     )
-    metal_color = fields.Char(
+    metal_color_id = fields.Many2one(
+        comodel_name="metal_colors",
         string="Color Metal",
-        placeholder="Color Metal",
     )
-    metal_law = fields.Many2one(
-        "metal_laws",
+    metal_law_id = fields.Many2one(
+        comodel_name="metal_laws",
         string="Ley Metal",
         placeholder="Ley Metal",
     )
+    awl = fields.Char(
+        string="Punzones",
+        placeholder="Punzones",
+    )
+    weight_product = fields.Float(
+        string='Peso en grs',
+        digits=(16,2),
+    )
+    rhodium = fields.Char(
+        string="Rodio",
+        placeholder="Rodio",
+    )
+    manufacturing = fields.Char(
+        string="Hechura",
+        placeholder="Hechura",
+    )
 
-
-class Metals(models.Model):
-    _name = "metals"
-    _description = "Metales"
+class MetalsColors(models.Model):
+    _name = "metal_colors"
+    _description = "Color Metales"
 
     name = fields.Char(
         string="Nombre",
