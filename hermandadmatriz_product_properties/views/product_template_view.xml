@@ -13,6 +13,9 @@
                 <field name="metal_law_id" optional="hide" />
                 <field name="awl" optional="hide"  />
                 <field name="rhodium" optional="hide" />
+                <field name="weight_product" optional="hide"/>
+                <field name="length_product" optional="hide"/>
+                <field name="width_product" optional="hide"/>
                 <field name="manufacturing" optional="hide" />
             </field>
         </field>
@@ -30,6 +33,9 @@
                 <field name="metal_law_id" optional="hide" />
                 <field name="awl" optional="hide"  />
                 <field name="rhodium" optional="hide" />
+                <field name="weight_product" optional="hide"/>
+                <field name="length_product" optional="hide"/>
+                <field name="width_product" optional="hide"/>
                 <field name="manufacturing" optional="hide" />
             </field>
         </field>
@@ -52,6 +58,9 @@
                         <field name="metal_law_id" />
                         <field name="awl" />
                         <field name="rhodium" />
+                        <field name="weight_product"/>
+                        <field name="length_product"/>
+                        <field name="width_product"/>
                         <field name="manufacturing" />
                     </group>
                 </page>

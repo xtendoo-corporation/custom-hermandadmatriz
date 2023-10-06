@@ -35,6 +35,14 @@ class ProductTemplate(models.Model):
         string='Peso en grs',
         digits=(16,2),
     )
+    length_product = fields.Float(
+        string='Longitud en cm',
+        digits=(6,2),
+    )
+    width_product = fields.Float(
+        string='Ancho en cm',
+        digits=(6,2),
+    )
     rhodium = fields.Char(
         string="Rodio",
         placeholder="Rodio",
@@ -43,6 +51,7 @@ class ProductTemplate(models.Model):
         string="Hechura",
         placeholder="Hechura",
     )
+
 
 class MetalsColors(models.Model):
     _name = "metal_colors"
