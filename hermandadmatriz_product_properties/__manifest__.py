@@ -15,6 +15,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/product_template_view.xml",
+        "views/metal_colors_view.xml",
     ],
     "installable": True,
     "auto_install": False,

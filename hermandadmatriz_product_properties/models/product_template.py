@@ -19,11 +19,11 @@ class ProductTemplate(models.Model):
         placeholder="Técnica",
     )
     metal_color_id = fields.Many2one(
-        comodel_name="metal_colors",
+        comodel_name="metal.colors",
         string="Color Metal",
     )
     metal_law_id = fields.Many2one(
-        comodel_name="metal_laws",
+        comodel_name="metal.laws",
         string="Ley Metal",
         placeholder="Ley Metal",
     )
@@ -51,24 +51,3 @@ class ProductTemplate(models.Model):
         string="Hechura",
         placeholder="Hechura",
     )
-
-
-class MetalsColors(models.Model):
-    _name = "metal_colors"
-    _description = "Color Metales"
-
-    name = fields.Char(
-        string="Nombre",
-    )
-
-
-class MetalLaws(models.Model):
-    _name = "metal_laws"
-    _description = "Leyes Metales"
-
-    name = fields.Char(
-        string="Nombre",
-    )
-
-
-

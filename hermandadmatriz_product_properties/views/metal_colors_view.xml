@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="action_metal_colors_form" model="ir.actions.act_window">
+        <field name="name">Color Metal</field>
+        <field name="res_model">metal.colors</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem action="action_metal_colors_form"
+              id="menu_action_metal_colors_form"
+              parent="stock.menu_warehouse_config"
+              sequence="2"/>
+
+</odoo>
